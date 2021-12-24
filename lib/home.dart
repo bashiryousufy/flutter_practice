@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:student_details/classes/class_1_alignment.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  Home({Key? key}) : super(key: key);
+
+  TextEditingController _controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +21,11 @@ class Home extends StatelessWidget {
               },
               child: Text(' Go to Alignment'),
             ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/todo');
+                },
+                child: Text("Todo")),
           ],
         ),
       ),

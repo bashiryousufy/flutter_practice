@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:student_details/classes/class_1_alignment.dart';
 
+import 'classes/class_2_TODO.dart';
 import 'home.dart';
 
 void main() {
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => Home(),
         '/first_class': (context) => ClassOneAlignment(),
+        '/todo': (context) => Todo(),
       },
     );
   }
