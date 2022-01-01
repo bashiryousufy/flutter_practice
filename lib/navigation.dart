@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:student_details/classes/class_1_alignment.dart';
+import 'package:student_details/classes/Class1/class_1_alignment.dart';
 
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
@@ -26,6 +26,9 @@ class Home extends StatelessWidget {
                   Navigator.pushNamed(context, '/todo');
                 },
                 child: Text("Todo")),
+            ElevatedButton(
+                onPressed: () => Navigator.pushNamed(context, '/users'),
+                child: Text("User Info")),
           ],
         ),
       ),

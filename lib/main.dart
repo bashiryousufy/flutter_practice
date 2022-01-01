@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:student_details/classes/class_1_alignment.dart';
+import 'package:student_details/classes/Class%203/Userpage.dart';
+import 'package:student_details/classes/Class1/class_1_alignment.dart';
 
-import 'classes/class_2_TODO.dart';
-import 'home.dart';
+import 'classes/Class 2/class_2_TODO.dart';
+import 'navigation.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => Home(),
         '/first_class': (context) => ClassOneAlignment(),
         '/todo': (context) => Todo(),
+        '/users': (context) => Userpage(),
       },
     );
   }
