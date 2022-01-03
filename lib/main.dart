@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:student_details/classes/Class%203/Userpage.dart';
+import 'package:student_details/classes/Class%203/test1.dart';
 import 'package:student_details/classes/Class1/class_1_alignment.dart';
 
 import 'classes/Class 2/class_2_TODO.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => Home(),
+        '/': (context) => LoginPage(),
         '/first_class': (context) => ClassOneAlignment(),
         '/todo': (context) => Todo(),
         '/users': (context) => Userpage(),
