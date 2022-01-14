@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:student_details/classes/Class%204/single_detail.dart';
 
 class Userpage extends StatefulWidget {
   Userpage({Key? key}) : super(key: key);
@@ -68,8 +69,13 @@ class _UserpageState extends State<Userpage> {
                           GestureDetector(
                               onTap: () {
                                 //print(_users[index]);
-                                Navigator.pushNamed(context, '/singleUser',
-                                    arguments: _users[index]);
+                                //userDetail: _users[index]
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => DetailPage(
+                                          length: 1,
+                                          userDetail: _users[index],
+                                          height: 2,
+                                        )));
                               },
                               child: Image.network(_users[index]['image'])),
                           Text(

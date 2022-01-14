@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         '/first_class': (context) => ClassOneAlignment(),
         '/todo': (context) => Todo(),
         '/users': (context) => Userpage(),
-        '/singleUser': (context) => DetailPage()
+        // '/singleUser': (context) => DetailPage()
       },
     );
   }
