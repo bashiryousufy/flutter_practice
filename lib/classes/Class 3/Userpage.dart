@@ -70,12 +70,8 @@ class _UserpageState extends State<Userpage> {
                               onTap: () {
                                 //print(_users[index]);
                                 //userDetail: _users[index]
-                                Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => DetailPage(
-                                          length: 1,
-                                          userDetail: _users[index],
-                                          height: 2,
-                                        )));
+                                Navigator.pushNamed(context, '/singleUser',
+                                    arguments: _users[index]);
                               },
                               child: Image.network(_users[index]['image'])),
                           Text(
