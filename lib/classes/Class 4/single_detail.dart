@@ -81,7 +81,7 @@ class _DetailPageState extends State<DetailPage> {
               //   child: Image.network(widget.userDetail['image']),
               // ),
               // Text("Name: ${widget.userDetail['firstName']}"),
-              // Text("Last Name: ${widget.userDetail['lastName']}"),
+              // Text("Last Name: ${widget.userDetail['lastName']}"),`
               // Text("Email: ${widget.userDetail['email']}"),
               // Text("Street: ${widget.userDetail['street']}"),
               // Text("Street Name: ${widget.userDetail['streetname']}"),
